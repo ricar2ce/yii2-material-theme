@@ -2,16 +2,14 @@
 
 namespace rce\material;
 
-use yii\web\AssetBundle as BaseMaterialAsset;
+use yii\web\AssetBundle;
 
 /**
- * Material AssetBundle
- * @since 0.1
+ * Material Dashboard AssetBundle
  */
-class MaterialAsset extends BaseMaterialAsset
+class Assets extends AssetBundle
 {
     public $sourcePath = '@vendor/ricar2ce/yii2-material-template/assets';
-
 
     public $css = [
         'css/material-dashboard.css',
