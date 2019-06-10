@@ -1,0 +1,21 @@
+{
+    "name": "ricar2ce/yii2-material-template",
+    "description": "Material Theme for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","material","theme","template","creative"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricardo Comendador Escalona",
+            "email": "ricar2ce@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rce\\material\\": ""
+        }
+    }
+}
