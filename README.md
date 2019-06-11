@@ -291,5 +291,5 @@ Render message without the session flash
 
 License
 -------
-- Copyright 2017 Creative Tim (http://www.creative-tim.com)
-- Licensed under MIT (https://github.com/ricar2ce/yii2-material-theme/blob/master/LICENSE.md)
+- Copyright 2017 [Creative Tim](http://www.creative-tim.com)
+- Licensed under [MIT](https://github.com/ricar2ce/yii2-material-theme/blob/master/LICENSE.md)
