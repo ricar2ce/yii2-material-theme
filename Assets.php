@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
  */
 class Assets extends AssetBundle
 {
-    public $sourcePath = '@vendor/ricar2ce/yii2-material-template/assets';
+    public $sourcePath = '@vendor/ricar2ce/yii2-material-theme/assets';
 
     public $css = [
         'css/material-dashboard.css',

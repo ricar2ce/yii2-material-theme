@@ -15,7 +15,7 @@ use rce\material\Assets;
         app\assets\AppAsset::register($this);
     }
 	$bundle = Assets::register($this);
-    $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/rce/yii2-material-template/assets');
+    $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/rce/yii2-material-theme/assets');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
