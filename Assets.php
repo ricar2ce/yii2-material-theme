@@ -73,6 +73,12 @@ class Assets extends AssetBundle
     ];
 
 
+    public $siteTitle = 'Material Dashboard';
+    public $sidebarColor = 'blue';
+    public $sidebarBackgroundColor = 'black';
+    public $sidebarBackgroundImage = '';
+
+
     /**
      * @inheritdoc
      */
