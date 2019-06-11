@@ -1,4 +1,4 @@
-Yii2 Material Assets
+Yii2 Material Theme
 =====================
 
 *Material UI for Yii2 Framework, based on [Creative Tim Material Dashboard](https://www.creative-tim.com/product/material-dashboard)*
@@ -16,11 +16,11 @@ Material Dashboard comes with 5 color filter choices for both the sidebar and th
 Material Dashboard uses a framework built by our friend [Federico - Bootstrap Material Design](http://fezvrasta.github.io/bootstrap-material-design/), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
 
 Special thanks go to:
-[Julio C. Ramos](https://github.com/ramosisw/yii2-material-dashboard) for yii2-material-dashboard
-[sanpyaelin](https://github.com/sanpyaelin/yii2-material-assets) for yii2-material-dashboard
-[Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system.
-[Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts.
-[Creative Tim](https://github.com/creativetimofficial/material-dashboard/)
+[Julio C. Ramos](https://github.com/ramosisw/yii2-material-dashboard) for yii2-material-dashboard,
+[sanpyaelin](https://github.com/sanpyaelin/yii2-material-assets) for yii2-material-dashboard,
+[Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system,
+[Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts,
+[Creative Tim](https://github.com/creativetimofficial/material-dashboard/) for the marvelous theme.
 
 Installation
 ------------
@@ -286,7 +286,7 @@ Render message without the session flash
 ## TO DO
 
 - [ ] [template] add other material template ( backend & frontend )
-- [ ] [widgets] add widget for material template ( each template )
+- [ ] [widgets] add more widgets for material template ( each template )
 
 
 License
