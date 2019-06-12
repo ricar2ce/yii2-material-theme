@@ -16,11 +16,12 @@ Material Dashboard comes with 5 color filter choices for both the sidebar and th
 Material Dashboard uses a framework built by our friend [Federico - Bootstrap Material Design](http://fezvrasta.github.io/bootstrap-material-design/), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
 
 Special thanks go to:
-[Julio C. Ramos](https://github.com/ramosisw/yii2-material-dashboard) for yii2-material-dashboard,
-[sanpyaelin](https://github.com/sanpyaelin/yii2-material-assets) for yii2-material-dashboard,
-[Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system,
-[Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts,
-[Creative Tim](https://github.com/creativetimofficial/material-dashboard/) for the marvelous theme.
+------
+-[Julio C. Ramos](https://github.com/ramosisw/yii2-material-dashboard) for yii2-material-dashboard,
+-[sanpyaelin](https://github.com/sanpyaelin/yii2-material-assets) for yii2-material-dashboard,
+-[Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system,
+-[Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts,
+-[Creative Tim](https://github.com/creativetimofficial/material-dashboard/) for the marvelous theme.
 
 Installation
 ------------
@@ -92,8 +93,8 @@ Customization
 ### Web-font usage
 
 This extension use the fallowing depend for the font icons usage:
-Nick Tsai [yii2-fontawesome](https://github.com/yidas/yii2-fontawesome)
-Andrey Izman [yii2-material-design-icons](https://github.com/mervick/yii2-material-design-icons)
+-Nick Tsai [yii2-fontawesome](https://github.com/yidas/yii2-fontawesome)
+-Andrey Izman [yii2-material-design-icons](https://github.com/mervick/yii2-material-design-icons)
 
 ----
 
@@ -242,7 +243,7 @@ By default to icons will be added prefix of [Material Icon](https://material.io/
 This is the Noti widget and  Yii 2 enhanced wrapper for the [Bootstrap Notify plugin](https://github.com/mouse0270/bootstrap-notify)
 
 Usage
-
+---
 Add widget to your `layout/main` :
 ```php
 use rce\material\widgets\Noti;
@@ -281,7 +282,7 @@ Render message without the session flash
 ]); ?>
 ```
 
-
+===============
 
 ## TO DO
 
