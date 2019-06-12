@@ -15,9 +15,19 @@
     }else {
         $img = $config::sidebarBackgroundImage();
     }
+    }
 ?>
 <div class="sidebar" data-color="<?= $config::sidebarColor()  ?>" data-background-color="<?= $config::sidebarBackgroundColor()  ?>">
     <div class="logo">
+        <a href="#" class="simple-text logo-mini">
+            <?php
+            if(empty($config::logoMini())) { ?>
+                <img src="<?=$directoryAsset.'/img/favicon.png'?>">
+            <?php } else {
+                echo $config::logoMini();
+            }
+            ?>
+        </a>
         <a href="#" class="simple-text logo-normal">
             <?= $config::siteTitle()  ?>
         </a>

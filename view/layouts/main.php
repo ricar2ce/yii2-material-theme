@@ -2,20 +2,21 @@
 use yii\helpers\Html;
 use rce\material\widgets\Noti;
 use rce\material\Assets;
-    if (Yii::$app->controller->action->id === 'login') {
-        echo $this->render(
-            'main-login',
-            ['content' => $content]
-        );
-    } else {
 
-    if (class_exists('backend\assets\AppAsset')) {
-        backend\assets\AppAsset::register($this);
-    } else {
-        app\assets\AppAsset::register($this);
-    }
-	$bundle = Assets::register($this);
-    $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ricar2ce/yii2-material-theme/assets');
+if (Yii::$app->controller->action->id === 'login') {
+    echo $this->render(
+        'main-login',
+        ['content' => $content]
+    );
+} else {
+
+if (class_exists('backend\assets\AppAsset')) {
+    backend\assets\AppAsset::register($this);
+} else {
+    app\assets\AppAsset::register($this);
+}
+$bundle = Assets::register($this);
+$directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ricar2ce/yii2-material-theme/assets');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -31,13 +32,13 @@ use rce\material\Assets;
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-	<body>
+	<body class="sidebar-mini">
 		<?php $this->beginBody() ?>
 		  <div class="wrapper ">
 		    <?= $this->render(
-                'left.php',
-                ['directoryAsset' => $directoryAsset ]
-            ) ?>
+            'left.php',
+            ['directoryAsset' => $directoryAsset ]
+        ) ?>
 		    <div class="main-panel">
 		    	<?= $this->render('header.php') ?>
 			    <div class="content">

@@ -63,7 +63,16 @@ use yii\helpers\Html;
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
+                  <a class="dropdown-item" href="#">
+                    <?php
+                    echo Html::beginForm(['/site/logout'], 'post');
+                    echo Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        ['class' => 'btn btn-link logout']
+                    );
+                    echo Html::endForm();
+                    ?>
+                  </a>
                 </div>
               </li>
             </ul>
