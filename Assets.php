@@ -74,6 +74,7 @@ class Assets extends AssetBundle
 
 
     public $siteTitle = 'Material Dashboard';
+    public $logoMini = '';
     public $sidebarColor = 'green';// "purple | azure | green | orange | danger | rose"
     public $sidebarBackgroundColor = 'black';// "black | white"
     public $sidebarBackgroundImage = '';

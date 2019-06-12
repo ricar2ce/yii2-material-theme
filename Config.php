@@ -37,4 +37,12 @@ class Config
 
         return $bundle->siteTitle;
     }
+
+    public static function logoMini()
+    {
+        /** @var Asset */
+        $bundle = Yii::$app->assetManager->getBundle('rce\material\Assets');
+
+        return $bundle->logoMini;
+    }
 }
