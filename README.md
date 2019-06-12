@@ -53,7 +53,7 @@ Once the extension is installed, you can have a **preview** by reconfiguring the
     'view' => [
         'theme' => [
             'pathMap' => [
-                '@app/views' => '@vendor/rce/yii2-material-theme/view'
+                '@app/views' => '@vendor/ricar2ce/yii2-material-theme/view'
             ],
         ],
     ],
@@ -84,7 +84,7 @@ if (class_exists('rce\material\Assets')) {
 Customization
 -------------
 
-- Copy files from `vendor/rce/yii2-material-theme/view`
+- Copy files from `vendor/ricar2ce/yii2-material-theme/view`
 - Remove the custom `view` configuration from your application by entered the new path mappings, if you have made them before.
 -------------
 
