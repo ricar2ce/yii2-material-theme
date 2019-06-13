@@ -33,6 +33,14 @@
         </a>
     </div>
     <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="/">
+              <i class="material-icons">home</i>
+              <p>Home</p>
+            </a>
+          </li>
+        </ul>
         <?= $menu ?>
     </div>
     <div class="sidebar-background" style="background-image: url(<?= $img ?>) "></div>
