@@ -15,7 +15,6 @@
     }else {
         $img = $config::sidebarBackgroundImage();
     }
-    }
 ?>
 <div class="sidebar" data-color="<?= $config::sidebarColor()  ?>" data-background-color="<?= $config::sidebarBackgroundColor()  ?>">
     <div class="logo">
