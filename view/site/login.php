@@ -11,10 +11,10 @@ $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
-    <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
-        <div class="card card-login">
-            <div class="card-header card-header-rose text-center">
+    <!-- <h1><?//= Html::encode($this->title) ?></h1> -->
+    <div class="col-md-4 col-sm-6 ml-auto mr-auto"><!-- col-lg-4  -->
+        <div class="card card-login card-hidden">
+            <div class="card-header card-header-rose text-center"  data-background-color="orange">
                 <h4 class="card-title">Login</h4>
                 <div class="social-line">
                     <a href="#" class="btn btn-just-icon btn-link btn-white">
@@ -28,22 +28,50 @@ $this->params['breadcrumbs'][] = $this->title;
                     </a>
                 </div>
             </div>
-            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+            <?php $form = ActiveForm::begin([
+                    'id' => 'login-form',
+//                    'fieldConfig' => [
+//                        'template' => "{input}\n{hint}\n{error}",
+//                    ],
+                ]); ?>
             <div class="card-body ">
-                <div class="form-group">
-                    <?= $form->field($model, 'username')->textInput() ?>
+                <span class="bmd-form-group">
+                        <?= $form->field($model, 'username',['template'=>'
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                <i class="material-icons">face</i>
+                                </span>
+                            </div>
+                            {input}
+                        </div>
+                        '
+                        ])->textInput()->label(false) ?>
                   <!--   <label class="bmd-label-floating">Username</label>
                     <input type="text" class="form-control"> -->
-                </div>
-                <div class="form-group">
-                    <?= $form->field($model, 'password')->passwordInput() ?>
-                   <!--  <label class="bmd-label-floating">Username</label>
-                    <input type="text" class="form-control"> -->
-                </div>
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                </span>
+                <span class="bmd-form-group">
+                        <?= $form->field($model, 'password',['template'=>'
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                <i class="material-icons">lock_outline</i>
+                                </span>
+                            </div>
+                            {input}
+                        </div>
+                        '
+                        ])->passwordInput(["class"=>"form-control","placeholder"=>"Password..."]) ?>
+                        <!-- <input type="password" class="form-control" placeholder="Password..."> -->
+                </span>
+                <span class="bmd-form-group">
+                    <div class="input-group">
+                        <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                    </div>
+                </span>
             </div>
            <div class="card-footer justify-content-center">
-                <?= Html::submitButton('Login', ['class' => 'btn btn-rose btn-link btn-block', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Login', ['class' => 'btn btn-green btn-block btn-border', 'name' => 'login-button']) ?>
            </div>
            <div class="card-footer">
            </div>

@@ -2,7 +2,8 @@
    use yii\helpers\Html;
    use yii\bootstrap\ActiveForm;
 
-   rce\material\Asset::register($this);
+   rce\material\Assets::register($this);
+$directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ricar2ce/yii2-material-theme/assets');
    ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -17,11 +18,16 @@
       <title><?= Html::encode($this->title) ?></title>
       <?php $this->head() ?>
    </head>
-   <body >
+   <body class="off-canvas-sidebar login-page">
       <?php $this->beginBody() ?>
       <div class="wrapper wrapper-full-page">
-         <div class="login">
-            <?= $content ?>
+         <!-- <div class="login"> -->
+         <div class="page-header login-page header-filter" filter-color="black" style="background-image: url('<?=$directoryAsset;?>/img/cover.jpg'); background-size: cover; background-position: top center;">
+        <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+
+            <div class="container">
+               <?= $content ?>
+            </div>
          </div>
       </div>
       <?php $this->endBody() ?>

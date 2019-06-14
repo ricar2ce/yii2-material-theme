@@ -63,7 +63,7 @@ use yii\helpers\Html;
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#" style="padding: 0;">
                     <?php
                     echo Html::beginForm(['/site/logout'], 'post');
                     echo Html::submitButton(

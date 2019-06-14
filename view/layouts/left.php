@@ -21,7 +21,7 @@
         <a href="#" class="simple-text logo-mini">
             <?php
             if(empty($config::logoMini())) { ?>
-                <img src="<?=$directoryAsset.'/img/favicon.png'?>">
+                <img src="<?=$directoryAsset;?>/img/favicon.png" style="max-width: 30px;">
             <?php } else {
                 echo $config::logoMini();
             }
