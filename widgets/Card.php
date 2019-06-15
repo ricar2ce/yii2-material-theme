@@ -50,9 +50,9 @@ class Card extends \yii\base\Widget
     public $plain = false;
     /*
      * string If you want align car's content
-     * right | center | default to 'left'
+     * text-right | text-center | card-stats
      */
-    public $align = 'left';
+    public $type = '';
     /*
      * boolean/string Card footer html
      * false | footer's html
@@ -91,12 +91,12 @@ class Card extends \yii\base\Widget
     public function run()
     {
         $content = ob_get_clean();
-        return '<div class="card text-'.$this->align.'">'.
-                  $this->getHeaderhtml().
-                  '<div class="card-body">'.
-                    $content.
-                  '</div>'.
-                    $this->getFooterhtml().
+        $body='';
+        if (!empty($content) && $content!=null && $content!='')
+            $body ='<div class="card-body">'.$content.'</div>';
+
+        return '<div class="card '.$this->type.'">'.
+                  $this->getHeaderhtml().$body.$this->getFooterhtml().
                 '</div>';
     }
 
@@ -111,10 +111,19 @@ class Card extends \yii\base\Widget
                     return '<img class="card-img-top" src="'.Html::encode($this->url).'" alt="">';
                     break;
                 case 'header-icon':
-                    return '<div class="card-header card-header-icon card-header-'.$this->color.'">
+                    if ($this->type!='card-stats')
+                        return '<div class="card-header card-header-icon card-header-'.$this->color.'">
                                 <div class="card-icon">
-                                  <i class="material-icons">'.$this->icon.'</i>
+                                  '.$this->icon.'
                                 </div>
+                              </div>';
+                    else
+                        return '<div class="card-header card-header-icon card-header-'.$this->color.'">
+                                <div class="card-icon">
+                                  '.$this->icon.'
+                                </div>
+                                <p class="card-category">'.Html::decode($this->subtitle).'</p>
+                                <h4 class="card-title">'.Html::decode($this->title).'</h4>
                               </div>';
                     break;
                 case 'header-text':
