@@ -93,7 +93,7 @@ class Card extends \yii\base\Widget
         $content = ob_get_clean();
         return '<div class="card text-'.$this->align.'">'.
                   $this->getHeaderhtml().
-                  '<div class="card-body">'
+                  '<div class="card-body">'.
                     Html::encode($content).
                   '</div>'.
                     $this->getFooterhtml().
