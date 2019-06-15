@@ -108,7 +108,7 @@ class Card extends \yii\base\Widget
         if ($this->header!=false) {
             switch ($this->header){
                 case 'img-top':
-                    return '<img class="card-img-top" src="'.$this->url.'" alt="">';
+                    return '<img class="card-img-top" src="'.Html::encode($this->url).'" alt="">';
                     break;
                 case 'header-icon':
                     return '<div class="card-header card-header-icon card-header-'.$this->color.'">
@@ -120,8 +120,8 @@ class Card extends \yii\base\Widget
                 case 'header-text':
                     return '<div class="card-header card-header-text card-header-'.$this->color.'">
                                 <div class="card-text">
-                                    <h4 class="card-title">'.$this->title.'</h4>
-                                    <p class="category">'.$this->subtitle.'</p>
+                                    <h4 class="card-title">'.Html::encode($this->title).'</h4>
+                                    <p class="category">'.Html::encode($this->subtitle).'</p>
                                 </div>
                               </div>';
                     break;
@@ -133,8 +133,8 @@ class Card extends \yii\base\Widget
 
                 default:
                     return '<div class="card-header">
-                                    <h4 class="card-title">'.$this->title.'</h4>
-                                    <p class="category">'.$this->subtitle.'</p>
+                                <h4 class="card-title">'.Html::encode($this->title).'</h4>
+                                <p class="category">'.Html::encode($this->subtitle).'</p>
                               </div>';
                     break;
             }
@@ -148,12 +148,12 @@ class Card extends \yii\base\Widget
     public function getFooterhtml()
     {
         if ($this->header=='img-bottom')
-            return '<img class="card-img-bottom" src="'.$this->url.'" alt="">';
+            return '<img class="card-img-bottom" src="'.Html::encode($this->url).'" alt="">';
 
         if ($this->footer == true)
-            return '<div class="card-footer text-muted">'.$this->footer.'</div>';
+            return '<div class="card-footer text-muted">'.Html::encode($this->footer).'</div>';
 
-        return Html::encode('<div></div>');
+        return '<div></div>';
     }
 
 }
