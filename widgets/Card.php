@@ -94,7 +94,7 @@ class Card extends \yii\base\Widget
         return '<div class="card text-'.$this->align.'">'.
                   $this->getHeaderhtml().
                   '<div class="card-body">'.
-                    Html::encode($content).
+                    $content.
                   '</div>'.
                     $this->getFooterhtml().
                 '</div>';
@@ -151,7 +151,7 @@ class Card extends \yii\base\Widget
             return '<img class="card-img-bottom" src="'.Html::encode($this->url).'" alt="">';
 
         if ($this->footer == true)
-            return '<div class="card-footer text-muted">'.Html::encode($this->footer).'</div>';
+            return '<div class="card-footer text-muted">'.$this->footer.'</div>';
 
         return '<div></div>';
     }
