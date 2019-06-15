@@ -91,7 +91,13 @@ class Card extends \yii\base\Widget
     public function run()
     {
         $content = ob_get_clean();
-        return '<div class="card text-'.$this->align.'">'.$this->getHeaderhtml().Html::encode($content).$this->getFooterhtml().'</div>';
+        return '<div class="card text-'.$this->align.'">'.
+                  $this->getHeaderhtml().
+                  '<div class="card-body">'
+                    Html::encode($content).
+                  '</div>'.
+                    $this->getFooterhtml().
+                '</div>';
     }
 
     /**
@@ -147,7 +153,7 @@ class Card extends \yii\base\Widget
         if ($this->footer == true)
             return '<div class="card-footer text-muted">'.$this->footer.'</div>';
 
-        return '<div></div>';
+        return Html::encode('<div></div>');
     }
 
 }
