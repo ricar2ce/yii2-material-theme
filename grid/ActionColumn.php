@@ -122,7 +122,9 @@ class ActionColumn extends Column
      * @var array html options to be applied to the [[initDefaultButtons()|default buttons]].
      * @since 2.0.4
      */
-    public $buttonOptions = ['class' => 'btn btn-primary btn-simple btn-xs'];
+    public $buttonViewOptions = ['class' => 'btn btn-info btn-simple btn-xs'];
+    public $buttonUpdateOptions = ['class' => 'btn btn-warning btn-simple btn-xs'];
+    public $buttonDeleteOptions = ['class' => 'btn btn-danger btn-simple btn-xs'];
 
 
     /**
@@ -145,7 +147,7 @@ class ActionColumn extends Column
                     'title' => Yii::t('yii', 'View'),
                     'aria-label' => Yii::t('yii', 'View'),
                     'data-pjax' => '0',
-                ], $this->buttonOptions);
+                ], $this->buttonViewOptions);
                 return Html::a('<i class="material-icons">remove_red_eye</i>', $url, $options);
             };
         }
@@ -155,7 +157,7 @@ class ActionColumn extends Column
                     'title' => Yii::t('yii', 'Update'),
                     'aria-label' => Yii::t('yii', 'Update'),
                     'data-pjax' => '0',
-                ], $this->buttonOptions);
+                ], $this->buttonUpdateOptions);
                 return Html::a('<i class="material-icons">edit</i>', $url, $options);
             };
         }
@@ -167,7 +169,7 @@ class ActionColumn extends Column
                     'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
                     'data-method' => 'post',
                     'data-pjax' => '0',
-                ], $this->buttonOptions);
+                ], $this->buttonDeleteOptions);
                 return Html::a('<i class="material-icons">delete</i>', $url, $options);
             };
         }
