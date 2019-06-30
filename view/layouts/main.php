@@ -42,7 +42,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ricar2ce/yii
 		    <div class="main-panel">
 		    	<?= $this->render('header.php') ?>
 			    <div class="content">
-			    	<div class="container">
+			    	<div class="container-fluid">
                   <?= Noti::widget() ?>
             			<?= $content ?>
 			    	</div>
