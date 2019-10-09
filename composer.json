@@ -1,6 +1,7 @@
 {
     "name": "ricar2ce/yii2-material-theme",
     "description": "Material Theme for Yii2",
+    "Language":["yii2","php","material"],
     "type": "yii2-extension",
     "keywords": ["yii2","extension","material","theme","creative"],
     "license": "MIT",
