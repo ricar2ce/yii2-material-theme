@@ -103,7 +103,7 @@ This extension use the fallowing depend for the font icons usage:
 Default config.
 ```php
 [
-    'siteTitle' = 'Material Dashboard',
+    'siteTitle' => 'Material Dashboard',
     'sidebarColor' => 'rose', // "purple | azure | green | orange | danger | rose"
     'sidebarBackgroundColor' => 'black', // "black | white"
     'sidebarBackgroundImage' => 'template/material-dashboard/img/sidebar-1.jpg'
@@ -117,7 +117,7 @@ Default config.
     'assetManager' => [
         'bundles' => [
             'rce\material\Assets' => [
-	              'siteTitle' = 'Your Site Name',
+	              'siteTitle' => 'Your Site Name',
                 'sidebarColor' => 'azure',
                 'sidebarBackgroundColor' => 'black',
                 'sidebarBackgroundImage' => 'img url'
@@ -134,7 +134,7 @@ using bundled assets
     Yii::$container->set(
         Assets::className(),
         [
-	    'siteTitle' = 'Your Site Name',
+	    'siteTitle' => 'Your Site Name',
 	    'sidebarColor' => 'rose',
 	    'sidebarBackgroundColor' => 'black',
 	    'sidebarBackgroundImage' => 'img url'
