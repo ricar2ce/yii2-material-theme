@@ -3,7 +3,7 @@ Yii2 Material Theme
 
 *Material UI for Yii2 Framework, based on [Creative Tim Material Dashboard](https://www.creative-tim.com/product/material-dashboard)*
 
-![Material Dashboard Free](https://camo.githubusercontent.com/27b77834c045e3b99a77c01c9b3251dda7c7d6107bbcf25595b11275c5450a09/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f637265617469766574696d5f6275636b65742f70726f64756374732f35302f6f726967696e616c2f6d6174657269616c2d64617368626f6172642e6a70673f31363334363438383733)
+![Material Dashboard Free](https://github.com/user-attachments/assets/77853152-4042-4c47-a6f3-46d44152e20d)
 
 Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard was built over the popular Bootstrap framework and it comes with a couple of third-party plugins redesigned to fit in with the rest of the elements.
 
@@ -286,8 +286,7 @@ Render message without the session flash
 
 ## TO DO
 
-- [ ] [template] add other material template ( backend & frontend )
-- [ ] [widgets] add more widgets for material template ( each template )
+- [ ] [widgets] add more widgets for material template.
 
 
 License
